@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+
+</head>
+<body>
+
+<h1> Local variable </h1>
+<button type="button" onclick="f1()">Button</button>
+<p id="id1"> </p>
+<p id="id2"> </p>
+<script>
+
+var n1=10 //global
+function f1()
+{
+    var n2=5 //local
+    sum=n1+n2
+    document.getElementById("id1").innerHTML="sum="+sum
+}
+
+    document.getElementById("id2").innerHTML = "Number 2=" + n2 //will not print becasue n2 only exists inside the brackets
+
+    document.getElementById("id2").innerHTML = "Numer 1="+n1
+
+
+</script>
+
+    
+</body>
+</html>
